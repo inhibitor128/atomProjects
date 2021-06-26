@@ -2,7 +2,7 @@ public class eightBall {
 
   public static void main(String[] args) {
 
-    System.out.println("Ask your question and Press enter to continue");
+    System.out.println("Ask your question ***Press enter to continue***");
 
     try{System.in.read();}
             catch(Exception e){}
