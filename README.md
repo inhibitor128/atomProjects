@@ -1,1 +1,1 @@
-// My Atom repository
+My Atom repository
