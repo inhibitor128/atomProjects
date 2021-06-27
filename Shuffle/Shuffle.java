@@ -1,5 +1,5 @@
 public class Shuffle {
-
+// Exercise: Code Magnets Head First Java 2nd ed.
   public static void main(String[] args) {
 
     int x = 3;
