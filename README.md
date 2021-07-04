@@ -1,1 +1,1 @@
-<h1>My Atom repository</h1>
+<h1><em>My Atom repository</em></h1>
