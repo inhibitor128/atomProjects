@@ -34,7 +34,6 @@ void PartA(void)
     printf("Difference: %i - %i = %i \n",num1, num2, difference);
     printf("Quotient: %i / %i = %i \n",num1, num2, quotient);
     printf("Remainder: %i %% %i = %i \n",num1, num2, remaind);
-
     printf("\nEnd of program\n\tHave a nice day!!!   \n");
 }
 
@@ -61,7 +60,6 @@ void PartB(void)
     printf("\nSum: %i + %i + %i = %i\n", num1, num2, num3, sum);
     printf("Average: (%i + %i + %i) / 3 = %i\n", num1, num2, num3, average);
     printf("Product: %i * %i * %i = %i\n", num1, num2, num3, product);
-
     printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
