@@ -17,7 +17,6 @@ void PartA(void)
     //declare variables
     int num1, num2, sum, product, difference, quotient, remaind;
 
-
     //get information from the user
     printf("Enter two whole numbers: ");
     scanf("%i %i",&num1, &num2);
@@ -97,7 +96,6 @@ void PartC(void)
     printf("area: %.2f * %i^2 = %.2f\n", Pi, radius, area);
     printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
-
 }
 
 void PartD(void)
@@ -108,19 +106,18 @@ void PartD(void)
 	printf("Part D:  \n");
 
 	//declare variables
-  float
-
+    float numGrade1, numGrade2, numGrade3, average;
 
     //get information from the user
-
+    printf("Enter the number grade of your last three classes: ");
+    scanf("%f %f %f", &numGrade1, &numGrade2, &numGrade3);
 
     //calculations
-
+    average = (numGrade1 + numGrade2 + numGrade3) / 3;
 
 	//output
-
-
-
+    printf("\nStudent average: %.2f \n", average);
+    printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
 
