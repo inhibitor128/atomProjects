@@ -87,10 +87,10 @@ void PartC(void)
     area = Pi* radius * radius;
 
 	//output
-    printf("\ndiameter: %i * 2 = %i\n", radius, diameter);
-    printf("circumference: %.2f * %i = %.2f\n", Pi, diameter, circumference);
-    printf("area: %.2f * %i^2 = %.2f\n", Pi, radius, area);
-    printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\ndiameter: %i * 2 = %i\n", radius, diameter);
+  printf("circumference: %.2f * %i = %.2f\n", Pi, diameter, circumference);
+  printf("area: %.2f * %i^2 = %.2f\n", Pi, radius, area);
+  printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
 
@@ -102,7 +102,7 @@ void PartD(void)
 	printf("Part D:  \n");
 
 	//declare variables
-    float numGrade1, numGrade2, numGrade3, average;
+  float numGrade1, numGrade2, numGrade3, average;
 
     //get information from the user
     printf("Enter the number grade of your last three classes: ");
@@ -112,8 +112,8 @@ void PartD(void)
     average = (numGrade1 + numGrade2 + numGrade3) / 3;
 
 	//output
-    printf("\nStudent average: %.2f \n", average);
-    printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nStudent average: %.2f \n", average);
+  printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
 
