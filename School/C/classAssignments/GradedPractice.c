@@ -22,19 +22,19 @@ void PartA(void)
     scanf("%i %i",&num1, &num2);
 
     //calculations
-	sum = num1 + num2;
+	  sum = num1 + num2;
     product = num1 * num2;
     difference = num1 - num2;
     quotient = num1 / num2;
     remaind = num1 % num2;
 
 	//output
-    printf("\nSum: %i + %i = %i \n",num1, num2, sum);
-    printf("Product: %i * %i = %i \n",num1, num2, product);
-    printf("Difference: %i - %i = %i \n",num1, num2, difference);
-    printf("Quotient: %i / %i = %i \n",num1, num2, quotient);
-    printf("Remainder: %i %% %i = %i \n",num1, num2, remaind);
-    printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nSum: %i + %i = %i \n",num1, num2, sum);
+  printf("Product: %i * %i = %i \n",num1, num2, product);
+  printf("Difference: %i - %i = %i \n",num1, num2, difference);
+  printf("Quotient: %i / %i = %i \n",num1, num2, quotient);
+  printf("Remainder: %i %% %i = %i \n",num1, num2, remaind);
+  printf("\nEnd of program\n\tHave a nice day!!!   \n");
 }
 
 void PartB(void)
@@ -57,10 +57,10 @@ void PartB(void)
     product = num1 * num2 * num3;
 
 	//output
-    printf("\nSum: %i + %i + %i = %i\n", num1, num2, num3, sum);
-    printf("Average: (%i + %i + %i) / 3 = %i\n", num1, num2, num3, average);
-    printf("Product: %i * %i * %i = %i\n", num1, num2, num3, product);
-    printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nSum: %i + %i + %i = %i\n", num1, num2, num3, sum);
+  printf("Average: (%i + %i + %i) / 3 = %i\n", num1, num2, num3, average);
+  printf("Product: %i * %i * %i = %i\n", num1, num2, num3, product);
+  printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
 
@@ -73,11 +73,9 @@ void PartC(void)
 	printf("Part C:  \n");
 
 	//declare variables
-    float Pi = 3.14159;
-    int radius;
-    int diameter;
-    float circumference;
-    float area;
+  float Pi = 3.14159;
+  int radius ,diameter;
+  float circumference, area;
 
     //get information from the user
     printf("Please enter a whole number for a radius: ");
