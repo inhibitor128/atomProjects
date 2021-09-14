@@ -75,7 +75,7 @@ void PartC(void)
 
 	//declare variables
   float Pi = 3.14159;
-  int radius ,diameter;
+  float radius ,diameter;
   float circumference, area;
 
     //get information from the user
@@ -88,8 +88,8 @@ void PartC(void)
     area = Pi* radius * radius;
 
 	//output
-  printf("\ndiameter: %i * 2 = %i\n", radius, diameter);
-  printf("circumference: %.2f * %i = %.2f\n", Pi, diameter, circumference);
+  printf("\ndiameter: %.2f * 2 = %.2f\n", radius, diameter);
+  printf("circumference: %.2f * %.2f = %.2f\n", Pi, diameter, circumference);
   printf("area: %.2f * %i^2 = %.2f\n", Pi, radius, area);
   printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
