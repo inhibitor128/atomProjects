@@ -1,5 +1,5 @@
 /**************************************************************************************
-Name:
+Name: J G
 INFO.2110  Week #2
  Graded Practice Hwk #1
 ********************************************************************************************/
@@ -34,7 +34,6 @@ void PartA(void)
   printf("Difference: %i - %i = %i \n",num1, num2, difference);
   printf("Quotient: %i / %i = %i \n",num1, num2, quotient);
   printf("Remainder: %i %% %i = %i \n",num1, num2, remaind);
-
   printf("\nEnd of program\n\tHave a nice day!!!   \n");
 }
 
@@ -62,7 +61,6 @@ void PartB(void)
   printf("\nSum: %i + %i + %i = %i\n", num1, num2, num3, sum);
   printf("Average: (%i + %i + %i) / 3 = %i R %i\n", num1, num2, num3, average,aveRemander);
   printf("Product: %i * %i * %i = %i\n", num1, num2, num3, product);
-
   printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
@@ -76,11 +74,9 @@ void PartC(void)
 	printf("Part C:  \n");
 
 	//declare variables
-    float Pi = 3.14159;
-    int radius;
-    int diameter;
-    float circumference;
-    float area;
+  float Pi = 3.14159;
+  int radius ,diameter;
+  float circumference, area;
 
     //get information from the user
     printf("Please enter a whole number for a radius: ");
@@ -92,10 +88,10 @@ void PartC(void)
     area = Pi* radius * radius;
 
 	//output
-    printf("\ndiameter: %i * 2 = %i\n", radius, diameter);
-    printf("circumference: %.2f * %i = %.2f\n", Pi, diameter, circumference);
-    printf("area: %.2f * %i^2 = %.2f\n", Pi, radius, area);
-    printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\ndiameter: %i * 2 = %i\n", radius, diameter);
+  printf("circumference: %.2f * %i = %.2f\n", Pi, diameter, circumference);
+  printf("area: %.2f * %i^2 = %.2f\n", Pi, radius, area);
+  printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
 
@@ -107,7 +103,7 @@ void PartD(void)
 	printf("Part D:  \n");
 
 	//declare variables
-    float numGrade1, numGrade2, numGrade3, average;
+  float numGrade1, numGrade2, numGrade3, average;
 
     //get information from the user
     printf("Enter the number grade of your last three classes: ");
@@ -117,8 +113,8 @@ void PartD(void)
     average = (numGrade1 + numGrade2 + numGrade3) / 3;
 
 	//output
-    printf("\nStudent average: %.2f \n", average);
-    printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nStudent average: %.2f \n", average);
+  printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
 
