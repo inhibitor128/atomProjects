@@ -46,7 +46,7 @@ void PartB(void)
 	printf("Part B:  \n");
 
     //declare variables
-    int num1, num2, num3, sum, average, product;
+    int num1, num2, num3, sum, average, aveRemander, product;
 
     //get information from the user
     printf("Enter three whole numbers: ");
@@ -55,11 +55,12 @@ void PartB(void)
     //calculations
     sum = num1 + num2 + num3;
     average = (num1 + num2 + num3) / 3;
+    aveRemander = (num1 + num2 +num3) % 3;
     product = num1 * num2 * num3;
 
 	//output
   printf("\nSum: %i + %i + %i = %i\n", num1, num2, num3, sum);
-  printf("Average: (%i + %i + %i) / 3 = %i\n", num1, num2, num3, average);
+  printf("Average: (%i + %i + %i) / 3 = %i R %i\n", num1, num2, num3, average,aveRemander);
   printf("Product: %i * %i * %i = %i\n", num1, num2, num3, product);
 
   printf("\nEnd of program\n\tHave a nice day!!!   \n");
