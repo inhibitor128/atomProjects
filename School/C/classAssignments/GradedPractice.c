@@ -12,7 +12,7 @@ void PartA(void)
 	/*Write a program that asks the user to enter two whole numbers,
 	and prints the sum, product, difference, quotient and remainder
 	of the two numbers.*/
-    printf("Part A:  \n");
+    printf("\t\t\tPart A:  \nFind the Sum\n\tProduct\n\t\tDifference\n\t\t\tQuotient & Remainder\n");
 
     //declare variables
     int num1, num2, sum, product, difference, quotient, remaind;
@@ -42,7 +42,7 @@ void PartB(void)
 	/*Part A and write a program that gets three different whole numbers
 	from the user, then prints the sum, the average, the product of
 	these numbers.*/
-	printf("Part B:  \n");
+	printf("\t\t\tPart B:  \nFind the sum\n\taverage\n\t\tand\n\t\tproduct of three numbers\n");
 
     //declare variables
     int num1, num2, num3, sum, average, aveRemander, product;
@@ -106,14 +106,18 @@ void PartD(void)
   float numGrade1, numGrade2, numGrade3, average;
 
     //get information from the user
-    printf("Enter the number grade of your last three classes: ");
-    scanf("%f %f %f", &numGrade1, &numGrade2, &numGrade3);
+    printf("Enter homework grade (700 max): ");
+    scanf("%f", &numGrade1);
+    printf("Enter medterm grade (150) : ");
+    scanf("%f", &numGrade2);
+    printf("Enter grade of your final exam (150 max): ");
+    scanf("%f", &numGrade3);
 
     //calculations
-    average = (numGrade1 + numGrade2 + numGrade3) / 3;
+    average = (numGrade1 + numGrade2 + numGrade3) / 10;
 
 	//output
-  printf("\nStudent average: %.2f \n", average);
+  printf("\nStudent Grade: %.2f \n", average);
   printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
