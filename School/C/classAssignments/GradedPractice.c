@@ -79,7 +79,7 @@ void PartC(void)
   float circumference, area;
 
     //get information from the user
-    printf("Please enter a whole number for a radius: ");
+    printf("Please enter a number for a radius: ");
     scanf("%f",&radius);
 
     //calculations
@@ -90,7 +90,7 @@ void PartC(void)
 	//output
   printf("\ndiameter: %.2f * 2 = %.2f\n", radius, diameter);
   printf("circumference: %.2f * %.2f = %.2f\n", Pi, diameter, circumference);
-  printf("area: %.2f * %f^2 = %.2f\n", Pi, radius, area);
+  printf("area: %.2f * %.2f^2 = %.2f\n", Pi, radius, area);
   printf("\nEnd of program\n\tHave a nice day!!!   \n");
 
 }
