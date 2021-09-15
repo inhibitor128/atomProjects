@@ -12,7 +12,7 @@ void PartA(void)
 	/*Write a program that asks the user to enter two whole numbers,
 	and prints the sum, product, difference, quotient and remainder
 	of the two numbers.*/
-    printf("\t\t\tPart A:  \nFind the Sum\n\tProduct\n\t\tDifference\n\t\t\tQuotient & Remainder\n");
+    printf("\t\t\tPart A:  \nFind the Sum, Product, Difference, Quotient & Remainder\n");
 
     //declare variables
     int num1, num2, sum, product, difference, quotient, remaind;
@@ -34,7 +34,7 @@ void PartA(void)
   printf("Difference: %i - %i = %i \n",num1, num2, difference);
   printf("Quotient: %i / %i = %i \n",num1, num2, quotient);
   printf("Remainder: %i %% %i = %i \n",num1, num2, remaind);
-  printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nEnd of program   \n");
 }
 
 void PartB(void)
@@ -42,7 +42,7 @@ void PartB(void)
 	/*Part A and write a program that gets three different whole numbers
 	from the user, then prints the sum, the average, the product of
 	these numbers.*/
-	printf("\t\t\tPart B:  \nFind the sum\n\taverage\n\t\tand\n\t\tproduct of three numbers\n");
+	printf("\t\t\tPart B: \nFind the sum, average and product of three numbers  \n");
 
     //declare variables
     int num1, num2, num3, sum, average, aveRemander, product;
@@ -61,7 +61,7 @@ void PartB(void)
   printf("\nSum: %i + %i + %i = %i\n", num1, num2, num3, sum);
   printf("Average: (%i + %i + %i) / 3 = %i R %i\n", num1, num2, num3, average,aveRemander);
   printf("Product: %i * %i * %i = %i\n", num1, num2, num3, product);
-  printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nEnd of program   \n");
 
 }
 
@@ -74,9 +74,8 @@ void PartC(void)
 	printf("Part C:  \n");
 
 	//declare variables
-  float Pi = 3.14159;
-  float radius ,diameter;
-  float circumference, area;
+  const float Pi = 3.14159;
+  float radius ,diameter, circumference, area;
 
     //get information from the user
     printf("Please enter a number for a radius: ");
@@ -91,7 +90,7 @@ void PartC(void)
   printf("\ndiameter: %.2f * 2 = %.2f\n", radius, diameter);
   printf("circumference: %.2f * %.2f = %.2f\n", Pi, diameter, circumference);
   printf("area: %.2f * %.2f^2 = %.2f\n", Pi, radius, area);
-  printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nEnd of program   \n");
 
 }
 
@@ -118,7 +117,7 @@ void PartD(void)
 
 	//output
   printf("\nStudent Grade: %.2f \n", average);
-  printf("\nEnd of program\n\tHave a nice day!!!   \n");
+  printf("\nEnd of program   \n");
 
 }
 
