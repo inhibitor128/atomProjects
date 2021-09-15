@@ -71,10 +71,11 @@ void PartC(void)
 	and prints the circle's diameter, circumference and area.  Declare and use the
 	constant value 3.14159 for Pi.  All calculations should occur outside
 	the printf statement(s) and use the formatted conversion %.2f for float variables.  */
-	printf("\t\t\tPart C:  \n");
+	printf("\t\t\tPart C:\nFind the diameter, circumference, and area of a circle  \n");
 
-	//declare variables
-  const float Pi = 3.14159;
+
+  const float Pi = 3.14159; //declare constant
+  //declare variables
   float radius ,diameter, circumference, area;
 
     //get information from the user
@@ -87,9 +88,9 @@ void PartC(void)
     area = Pi* radius * radius;
 
 	//output
-  printf("\ndiameter: %.2f * 2 = %.2f\n", radius, diameter);
-  printf("circumference: %.2f * %.2f = %.2f\n", Pi, diameter, circumference);
-  printf("area: %.2f * %.2f^2 = %.2f\n", Pi, radius, area);
+  printf("\ndiameter: %.2f * 2 = %.2f  \n", radius, diameter);
+  printf("circumference: %.2f * %.2f = %.2f  \n", Pi, diameter, circumference);
+  printf("area: %.2f * %.2f^2 = %.2f  \n", Pi, radius, area);
   printf("\nEnd of program   \n");
 
 }
@@ -99,7 +100,7 @@ void PartD(void)
 	/*	Part A, B, & C and write a program that calculates the student average based on
 	the following where the user enters 3 values, the program adds the values up and
 	then displays the student average.   */
-	printf("\t\t\tPart D:  \n");
+	printf("\t\t\tPart D:\nFind a student's GPA    \n");
 
 	//declare variables
   float numGrade1, numGrade2, numGrade3, average;
@@ -107,7 +108,7 @@ void PartD(void)
     //get information from the user
     printf("Enter homework grade (700 max): ");
     scanf("%f", &numGrade1);
-    printf("Enter medterm grade (150) : ");
+    printf("Enter medterm grade (150 max) : ");
     scanf("%f", &numGrade2);
     printf("Enter grade of your final exam (150 max): ");
     scanf("%f", &numGrade3);
