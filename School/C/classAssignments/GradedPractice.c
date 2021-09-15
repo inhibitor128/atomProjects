@@ -71,7 +71,7 @@ void PartC(void)
 	and prints the circle's diameter, circumference and area.  Declare and use the
 	constant value 3.14159 for Pi.  All calculations should occur outside
 	the printf statement(s) and use the formatted conversion %.2f for float variables.  */
-	printf("Part C:  \n");
+	printf("\t\t\tPart C:  \n");
 
 	//declare variables
   const float Pi = 3.14159;
@@ -99,7 +99,7 @@ void PartD(void)
 	/*	Part A, B, & C and write a program that calculates the student average based on
 	the following where the user enters 3 values, the program adds the values up and
 	then displays the student average.   */
-	printf("Part D:  \n");
+	printf("\t\t\tPart D:  \n");
 
 	//declare variables
   float numGrade1, numGrade2, numGrade3, average;
