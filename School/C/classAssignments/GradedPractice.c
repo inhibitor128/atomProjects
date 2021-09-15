@@ -117,7 +117,7 @@ void PartD(void)
     average = (numGrade1 + numGrade2 + numGrade3) / 10;
 
 	//output
-  printf("\nStudent Grade: %.2f \n", average);
+  printf("\nStudent Grade: %.2f   \n", average);
   printf("\nEnd of program   \n");
 
 }
