@@ -44,11 +44,11 @@ int main(void)
   }
   if(value1 < 1000)
   {
-    printf("%i is less then 1000 \n", value1);
+    printf("%i is less than 1000 \n", value1);
   }
   if (value1 > 500)
   {
-    printf("%i is greater then 500 \n", value1);
+    printf("%i is greater than 500 \n", value1);
   }
   else
   {
