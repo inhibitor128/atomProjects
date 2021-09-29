@@ -18,7 +18,7 @@ int main()
   printf("3 - Dumbo\n");
   printf("4 - Exit Program\n");
 
-  printf("Enter your choice: ");
+  printf("\nEnter your choice: ");
   scanf("%i", &num);
 
   if(num < 0 || num > 4)
@@ -43,7 +43,26 @@ int main()
           printf("S::::::SSSSSS:::::S h:::::h     h:::::h e::::::::eeeeeeee   r:::::r             e::::::::eeeeeeee k::::::k  k:::::k  \n");
           printf("S:::::::::::::::SS  h:::::h     h:::::h  ee:::::::::::::e   r:::::r              ee:::::::::::::e k::::::k   k:::::k \n");
           printf(" SSSSSSSSSSSSSSS    hhhhhhh     hhhhhhh    eeeeeeeeeeeeee   rrrrrrr                eeeeeeeeeeeeee kkkkkkkk    kkkkkkk\n");
+          break;
         case 2:
+          printf("8 888888888o          .8.          8 888888888o   8 8888888888   \n");
+          printf("8 8888    `88.       .888.         8 8888    `88. 8 8888         \n");
+          printf("8 8888     `88      :88888.        8 8888     `88 8 8888         \n");
+          printf("8 8888     ,88     . `88888.       8 8888     ,88 8 8888         \n");
+          printf("8 8888.   ,88'    .8. `88888.      8 8888.   ,88' 8 888888888888 \n");
+          printf("8 8888888888     .8`8. `88888.     8 8888888888   8 8888         \n");
+          printf("8 8888    `88.  .8' `8. `88888.    8 8888    `88. 8 8888         \n");
+          printf("8 8888      88 .8'   `8. `88888.   8 8888      88 8 8888         \n");
+          printf("8 8888    ,88'.888888888. `88888.  8 8888    ,88' 8 8888         \n");
+          printf("8 888888888P .8'       `8. `88888. 8 888888888P   8 888888888888 \n");
+          break;
+        case 3:
+          printf("____            _        \n");
+          printf("|    \\_ _ _____| |_ ___ \n");
+          printf("|  |  | | |     | . | . |\n");
+          printf("|____/|___|_|_|_|___|___|\n");
+          break;
+        default: printf("\nPrgram exit. Good bye.\n");
       }
 
   return 0;
