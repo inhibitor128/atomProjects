@@ -86,7 +86,7 @@ int main()
         tri = tri + n;
         printf("%2i %8i\n", n, tri);
     }
-    //multiples of 4
+    //multiples of 4 up to 100
 
     //highest number entered by the user
 
