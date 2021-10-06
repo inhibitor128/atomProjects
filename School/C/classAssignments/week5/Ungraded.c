@@ -87,7 +87,10 @@ int main()
         printf("%2i %8i\n", n, tri);
     }
     //multiples of 4 up to 100
-
+    printf("multiples of 4 up to 100: ");
+    for(int n = 0; n <=100; n=n+4)
+      printf("%5i", n);
+      printf("\n");
     //highest number entered by the user
 
     //generate the numbers 0 to 99 using nested for loops
@@ -97,6 +100,19 @@ int main()
     // create a 3 by 3 square using a nested for loops
 
     //create a right triangle with 10 rows using a nested for loops
+    printf("\nright triangle with 10 rows using a nested for loops\n");
+for(int n = 1; n <= 10; ++n)
+{
+    int triInner = 0;
+    //printf("%5i", n);
+    printf("\n");
+     for(int j = 1; j <= n; ++j)
+   {
+         triInner = triInner + j;
+         printf("%5i", j);
+   }
+   printf("\n");
+}
 
 
 
