@@ -80,8 +80,8 @@ int main()
     //Table of triangular numbers for 1 to 10
     tri = 0;
     printf("\nTable of triangular numbers for 1 to 10\n");
-    printf(" n   Sum from 1 to 10\n");
-    printf("---  ----------------\n");
+    printf(" n   Triangular#\n");
+    printf("---  -----------\n");
     for(int n = 1; n <= 10; ++n)
     {
         tri = tri + n;
@@ -107,11 +107,35 @@ int main()
       printf("The biggest number entered is %i\n", big);
     }
     //generate the numbers 0 to 99 using nested for loops
-
+    for (int tens = 0; tens <= 9; ++tens)
+    {
+        for(int ones = 0; ones <=9; ++ ones )
+        {
+            if(tens == 0)
+            {
+                printf("%6i", ones);
+            }
+            else
+            {
+                printf("%5i%i", tens, ones);
+            }
+        }
+        printf("\n");
+    }
     //write a program to calculate the triangular number for 5 integers entered by the user
 
     // create a 3 by 3 square using a nested for loops
-
+    for(int n = 0; n < 3; ++n)
+    {
+      for(int j = 1; j <=3; ++j)
+      {
+          printf("* ");
+          if(j == 3)
+          {
+              printf("\n");
+            }
+      }
+    }
     //create a right triangle with 10 rows using a nested for loops
     printf("\nright triangle with 10 rows using a nested for loops\n");
 for(int n = 1; n <= 10; ++n)
