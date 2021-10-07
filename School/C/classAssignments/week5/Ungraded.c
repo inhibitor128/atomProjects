@@ -81,6 +81,7 @@ int main()
     tri = 0;
     printf("\nTable of triangular numbers for 1 to 10\n");
     printf(" n   Sum from 1 to 10\n");
+    printf("---  ----------------\n");
     for(int n = 1; n <= 10; ++n)
     {
         tri = tri + n;
@@ -91,8 +92,20 @@ int main()
     for(int n = 0; n <=100; n=n+4)
       printf("%5i", n);
       printf("\n");
-    //highest number entered by the user
-
+    //highest number entered by the user's 20 entries
+    int big, num;
+    printf("Enter a number: ");
+    scanf("%i", &big);
+    for(int n = 1; n <= 19; ++n)
+    {
+      printf("Enter a number: ");
+      scanf("%i", &num);
+      if(num > big)
+      {
+        big = num;
+      }
+      printf("The biggest number entered is %i\n", big);
+    }
     //generate the numbers 0 to 99 using nested for loops
 
     //write a program to calculate the triangular number for 5 integers entered by the user
