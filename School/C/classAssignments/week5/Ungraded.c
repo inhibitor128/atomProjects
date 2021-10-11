@@ -60,7 +60,7 @@ int main()
     }
     printf("\nTrangular numbers: %i\n",tri);
 
-    //8th triangular number
+    //8th triangular numbe
     tri = 0;
     for(int n = 1; n <= 8; ++n)
     {
@@ -68,6 +68,7 @@ int main()
     }
     printf("\n8th Trangular numbers: %i\n", tri);
     //user input for triangular numbers
+    printf("\nUser input Trangular number\n");
     int user_num;
     tri = 0;
     printf("Enter a Trangular number: ");
@@ -93,10 +94,11 @@ int main()
       printf("%5i", n);
       printf("\n");
     //highest number entered by the user's 20 entries
+    printf("\nfind highist number entered by user\n");
     int big, num;
     printf("Enter a number: ");
     scanf("%i", &big);
-    for(int n = 1; n <= 19; ++n)
+    for(int n = 1; n <= 9; ++n)
     {
       printf("Enter a number: ");
       scanf("%i", &num);
@@ -104,9 +106,10 @@ int main()
       {
         big = num;
       }
-      printf("The biggest number entered is %i\n", big);
     }
+    printf("The biggest number entered is %i\n", big);
     //generate the numbers 0 to 99 using nested for loops
+    printf("\n generate 99 numbers with for loop\n");
     for (int tens = 0; tens <= 9; ++tens)
     {
         for(int ones = 0; ones <=9; ++ ones )
@@ -123,6 +126,21 @@ int main()
         printf("\n");
     }
     //write a program to calculate the triangular number for 5 integers entered by the user
+    printf("\nUser enters 5 integers to calculate triangular #\n");
+    user_num = 0;
+    tri = 0;
+    for(int j = 0;  j <=5; ++j)
+    {
+      printf("Enter a Trangular number: ");
+      scanf("%i", &user_num);
+      for(int n = 1; n <= user_num; ++n)
+      {
+          tri = tri + n;
+      }
+      printf("\nUser input Trangular numbers: %i\n", tri);
+      tri = 0;
+    }
+
 
     // create a 3 by 3 square using a nested for loops
     for(int n = 0; n < 3; ++n)
@@ -138,18 +156,19 @@ int main()
     }
     //create a right triangle with 10 rows using a nested for loops
     printf("\nright triangle with 10 rows using a nested for loops\n");
-for(int n = 1; n <= 10; ++n)
-{
-    int triInner = 0;
-    //printf("%5i", n);
+    for(int n = 1; n <= 10; ++n)
+    {
+      int triInner = 0;
+      //printf("%5i", n);
+      printf("\n");
+      for(int j = 1; j <= n; ++j)
+     {
+
+       printf("* ");
+     }
+    }
     printf("\n");
-     for(int j = 1; j <= n; ++j)
-   {
-         triInner = triInner + j;
-         printf("%5i", j);
-   }
-   printf("\n");
-}
+
 
 
 
