@@ -22,24 +22,50 @@ class My_Contacts:
   def my_id(self):
     id_me = [self.first_name, self.last_name, self.phone_number, self.email_address, self.street, self.city, self.state, self.zip_code, self.notes]
     return id_me
-# class for user input of a contact
-class user_input(My_Contacts):
-  def __init__(self):
-    # user inputs
-    self.first_name = input("Enter First Name: ")
-    self.last_name = input("Enter Last Name: ")
-    self.phone_number = input("Enter Phone Number: ")
-    self.email_address = input("Enter Email Address: ")
-    self.street = input("Enter Street: ")
-    self.city = input("Enter City: ")
-    self.state = input("Enter State: ")
-    self.zip_code = input("Enter Zip Code: ")
-    self.notes = input("Enter Notes: ")
-#new contact
-new_contact = user_input()
-# vvv for csv file vvv
-with open('contacts.csv', 'w') as contacts_csv:
-  row_header = ['First Name', 'Last Name', 'Phone Number', 'Email Address', 'Street', 'City', 'State', 'Zip code', 'Notes']
-  writer = csv.writer(contacts_csv)
-  writer.writerow(row_header)
-  writer.writerow(new_contact.my_id())
+#menu switch
+print("      ***MENU***")
+print("1 - Enter New Contact")
+print("2 - Update Contact")
+print("3 - Delete Contact")
+print("4 - View Contact")
+print("5 - View Contacts")
+print("\n")
+choice = input("Make a selection: ")
+#if statment for menu
+if int(choice) == 1:
+  # class for user input of a contact
+  class user_input(My_Contacts):
+    def __init__(self):
+      # user inputs
+      self.first_name = input("Enter First Name: ")
+      self.last_name = input("Enter Last Name: ")
+      self.phone_number = input("Enter Phone Number: ")
+      self.email_address = input("Enter Email Address: ")
+      self.street = input("Enter Street: ")
+      self.city = input("Enter City: ")
+      self.state = input("Enter State: ")
+      self.zip_code = input("Enter Zip Code: ")
+      self.notes = input("Enter Notes: ")
+  #new contact
+  new_contact = user_input()
+  num_rows = 0
+  for row in open('contacts.csv'):
+    num_rows += 1
+  if num_rows <=1:
+    # vvv for csv file vvv
+    with open('contacts.csv', 'w') as contacts_csv:
+      row_header = ['First Name', 'Last Name', 'Phone Number', 'Email Address', 'Street', 'City', 'State', 'Zip code', 'Notes']
+      writer = csv.writer(contacts_csv)
+      writer.writerow(row_header)
+      writer.writerow(new_contact.my_id())
+  else:
+    with open('contacts.csv', 'a') as contacts_csv:
+      row_header = ['First Name', 'Last Name', 'Phone Number', 'Email Address', 'Street', 'City', 'State', 'Zip code', 'Notes']
+      writer = csv.writer(contacts_csv)
+      writer.writerow(new_contact.my_id())
+
+elif int(choice) == 5:
+  with open('contacts.csv') as contacts_csv:
+    contacts_data = contacts_csv.readlines()
+    for line in contacts_data:
+      print(line)
