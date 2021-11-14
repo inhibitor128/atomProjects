@@ -1,5 +1,5 @@
 /*******************************************************************************************
-Name: 
+Name:
 
 Graded Practice #6 GradeBook
 Program Description:
@@ -31,11 +31,6 @@ void PrintMenu(void)
 	printf(" 5 - Quit \n");
 }
 
-void gradeBookChoice(void)
-{
-
-}
-
 int inputTestGrade(void)
 {
     int test1, test2, test3, sum;
@@ -44,7 +39,7 @@ int inputTestGrade(void)
     scanf("%i %i %i", &test1, &test2, &test3);
     sum = test1 + test2 + test3;
     ave = (float)sum/3;
-    printf("%.2f", ave);
+    printf("%.2f\n", ave);
     return ave;
 }
 
@@ -56,7 +51,7 @@ int inputQuizGrade(void)
     scanf("%i %i %i %i %i", &quiz1, &quiz2, &quiz3, &quiz4, &quiz5);
     sum = quiz1 + quiz2 + quiz3 + quiz4 + quiz5;
     ave = (float)sum/5;
-    printf("%.2f", ave);
+    printf("%.2f\n", ave);
     return ave;
 }
 
@@ -68,13 +63,44 @@ int inputHomwordGrade(void)
     scanf("%i %i %i %i %i", &homework1, &homework2, &homework3, &homework4, &homework5);
     sum = homework1 + homework2 + homework3 + homework4 + homework5;
     ave = (float)sum/5;
-    printf("%.2f", ave);
+    printf("%.2f\n", ave);
     return ave;
+}
+
+void gradeBookChoice(void)
+{
+    int choice = 0;
+    float textAve, quizAve, HomeworkAve, overAllAve;
+    int exitProgram = 0;
+    do
+    {
+        printf("Enter menu choice: ");
+        scanf("%i", &choice);
+        switch(choice)
+        {
+          case 1:
+            textAve = inputTestGrade();
+            break;
+          case 2:
+            quizAve = inputQuizGrade();
+            break;
+          case 3:
+            HomeworkAve = inputHomwordGrade();
+            break;
+          case 4:
+            //overAllAve = inputOverallGrade();
+            break;
+          case 5:
+            exitProgram = 1;
+            break;
+        }
+    } while (exitProgram != 1);
 }
 
 int main()
 {
-    //PrintMenu();
-    inputTestGrade();
-     return 0;
+    PrintMenu();
+    gradeBookChoice();
+
+    return 0;
 }
