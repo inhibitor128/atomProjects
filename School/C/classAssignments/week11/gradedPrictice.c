@@ -15,29 +15,43 @@ Final grade = .5*test average + .3*quiz average + .2*homework average
 
 The user will then quit the program
 ********************************************************************************************/
+//Required Lbraries
 #include<stdio.h>
-
+//Function Definitions
 void PrintMenu(void)
 {
-    //input: none
-    //returned output: none
-    // goal:  print the menu options
-
-	printf("\n\n *** Menu *** \n");
-	printf(" 1 - Enter Tests    \n");
-	printf(" 2 - Enter Quizzes  \n");
-	printf(" 3 - Enter Homework \n");
-	printf(" 4 - Calculate over all grade \n");
-	printf(" 5 - Quit \n");
+  	//input: none
+  	//returned output: none
+  	// goal:  print the menu options
+		printf("\n\n *** Menu *** \n");
+		printf(" 1 - Enter Tests    \n");
+		printf(" 2 - Enter Quizzes  \n");
+		printf(" 3 - Enter Homework \n");
+		printf(" 4 - Calculate over all grade \n");
+		printf(" 5 - Quit \n");
 }
 
 float inputTestGrade(void)
 {
-    int test1, test2, test3, sum;
+		//input: test grades
+		//returned output: test average
+		// goal: Calculate test average
+    printf("\nInput 3 Test Grades\n");
+    printf("Valid score range 0 to 100\n");
+    int test1, sum = 0;
     float ave;
-    printf("Enter three test scores: ");
-    scanf("%i %i %i", &test1, &test2, &test3);
-    sum = test1 + test2 + test3;
+    for(int i =1; i<=3 ; ++i)
+    {
+        printf("Enter score %i: ", i);
+        scanf("%i", &test1);
+        if(test1 > 100 || test1 < 0)
+        {
+            printf("\nPlease enter a valid grade!\n");
+            printf("Enter score %i: ", i);
+            scanf("%i", &test1);
+        }
+        sum = sum + test1;
+    }
     ave = (float)sum/3;
     printf("Student test average: %.2f\n", ave);
     return ave;
@@ -45,43 +59,74 @@ float inputTestGrade(void)
 
 float inputQuizGrade(void)
 {
-    int quiz1, quiz2, quiz3, quiz4, quiz5, sum;
+		//input: quiz grades
+		//returned output: quiz average
+		// goal: Calculate quiz average
+    printf("\nInput 5 Quiz Grades\n");
+    printf("Valid score range 0 to 100\n");
+    int quiz1, sum = 0;
     float ave;
-    printf("Enter five quiz scores: ");
-    scanf("%i %i %i %i %i", &quiz1, &quiz2, &quiz3, &quiz4, &quiz5);
-    sum = quiz1 + quiz2 + quiz3 + quiz4 + quiz5;
+    for(int i =1; i<=5 ; ++i)
+    {
+        printf("Enter score %i: ", i);
+        scanf("%i", &quiz1);
+        if(quiz1 > 100 || quiz1 < 0)
+        {
+            printf("\nPlease enter a valid grade!\n");
+            printf("Enter score %i: ", i);
+            scanf("%i", &quiz1);
+        }
+        sum = sum + quiz1;
+    }
     ave = (float)sum/5;
     printf("Student quiz average: %.2f\n", ave);
     return ave;
 }
 
-float inputHomwordGrade(void)
+float inputHomeworkGrade(void)
 {
-    int homework1, homework2, homework3, homework4, homework5, sum;
+		//input: homework grades
+		//returned output: homework average
+		// goal: Calculate homework average
+    printf("\nInput 5 Homework Grades\n");
+    printf("Valid score range 0 to 100\n");
+    int homework1, sum = 0;
     float ave;
-    printf("Enter five homework grades: ");
-    scanf("%i %i %i %i %i", &homework1, &homework2, &homework3, &homework4, &homework5);
-    sum = homework1 + homework2 + homework3 + homework4 + homework5;
+    for(int i =1; i<=5 ; ++i)
+    {
+        printf("Enter score %i: ", i);
+        scanf("%i", &homework1);
+        if(homework1 > 100 || homework1 < 0)
+        {
+            printf("\nPlease enter a valid grade!\n");
+            printf("Enter score %i: ", i);
+            scanf("%i", &homework1);
+        }
+        sum = sum + homework1;
+    }
     ave = (float)sum/5;
     printf("Student homework average: %.2f\n", ave);
     return ave;
 }
 float studentFinalGrade(float testAve, float quizAve, float homeAve)
 {
+		//input: average from test quiz and homework
+		//returned output: final grade
+		// goal: Calculate final grade
     float finalGrade;
     finalGrade = .5 * testAve + .3 * quizAve + .2 * homeAve;
 
     //printf("%.2f + %.2f + %.2f\n", ave01, ave02, ave03); for debugging
-    printf("Student final grade: %.2f\n", finalGrade);
+    printf("\nStudent final grade: %.2f\n", finalGrade);
 }
 
 void Quit(void)
 {
     //input:  none
-	//returned output:  none
-	//purpose:  to print a good bye message
-	printf("\n");
-	printf("#####                       \n");
+		//returned output:  none
+		//purpose:  to print a good bye message
+		printf("\n");
+		printf("#####                       \n");
     printf("#     #  ####   ####  #####  \n");
     printf("#       #    # #    # #    # \n");
     printf("#  #### #    # #    # #    # \n");
@@ -102,6 +147,9 @@ void Quit(void)
 
 void gradeBookChoice(void)
 {
+		//input:  validated menu choice
+		//returned output:  none
+		//purpose:  to redirect the program to the menu choice given by the user
     int choice = 0;
     float textAve, quizAve, homeworkAve, overAllAve;
     int exitProgram = 0;
@@ -125,7 +173,7 @@ void gradeBookChoice(void)
             quizAve = inputQuizGrade();
             break;
           case 3:
-            homeworkAve = inputHomwordGrade();
+            homeworkAve = inputHomeworkGrade();
             break;
           case 4:
             overAllAve = studentFinalGrade(textAve, quizAve, homeworkAve);
