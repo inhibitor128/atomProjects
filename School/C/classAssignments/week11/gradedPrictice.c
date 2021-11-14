@@ -31,7 +31,7 @@ void PrintMenu(void)
 	printf(" 5 - Quit \n");
 }
 
-int inputTestGrade(void)
+float inputTestGrade(void)
 {
     int test1, test2, test3, sum;
     float ave;
@@ -43,7 +43,7 @@ int inputTestGrade(void)
     return ave;
 }
 
-int inputQuizGrade(void)
+float inputQuizGrade(void)
 {
     int quiz1, quiz2, quiz3, quiz4, quiz5, sum;
     float ave;
@@ -55,22 +55,29 @@ int inputQuizGrade(void)
     return ave;
 }
 
-int inputHomwordGrade(void)
+float inputHomwordGrade(void)
 {
     int homework1, homework2, homework3, homework4, homework5, sum;
     float ave;
-    printf("Enter five quiz scores: ");
+    printf("Enter five homework grades: ");
     scanf("%i %i %i %i %i", &homework1, &homework2, &homework3, &homework4, &homework5);
     sum = homework1 + homework2 + homework3 + homework4 + homework5;
     ave = (float)sum/5;
     printf("%.2f\n", ave);
     return ave;
 }
-
+float overAllGrade(float ave01, float ave02, float ave03)
+{
+    float sum1, ave1;
+    sum1 = ave01 + ave02 + ave03;
+    ave1 = (float)sum1 / 3;
+    //printf("%.2f + %.2f + %.2f\n", ave01, ave02, ave03); for debugging
+    printf("%.2f\n", ave1);
+}
 void gradeBookChoice(void)
 {
     int choice = 0;
-    float textAve, quizAve, HomeworkAve, overAllAve;
+    float textAve, quizAve, homeworkAve, overAllAve;
     int exitProgram = 0;
     do
     {
@@ -85,10 +92,10 @@ void gradeBookChoice(void)
             quizAve = inputQuizGrade();
             break;
           case 3:
-            HomeworkAve = inputHomwordGrade();
+            homeworkAve = inputHomwordGrade();
             break;
           case 4:
-            //overAllAve = inputOverallGrade();
+            overAllAve = overAllGrade(textAve, quizAve, homeworkAve);
             break;
           case 5:
             exitProgram = 1;
