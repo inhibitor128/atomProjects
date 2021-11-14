@@ -74,11 +74,38 @@ float studentFinalGrade(float testAve, float quizAve, float homeAve)
     //printf("%.2f + %.2f + %.2f\n", ave01, ave02, ave03); for debugging
     printf("Student final grade: %.2f\n", finalGrade);
 }
+
+void Quit(void)
+{
+    //input:  none
+	//returned output:  none
+	//purpose:  to print a good bye message
+	printf("\n");
+	printf("#####                       \n");
+    printf("#     #  ####   ####  #####  \n");
+    printf("#       #    # #    # #    # \n");
+    printf("#  #### #    # #    # #    # \n");
+    printf("#     # #    # #    # #    # \n");
+    printf("#     # #    # #    # #    # \n");
+    printf("#####   ####   ####  #####  \n");
+    printf("\n");
+    printf("######                       \n");
+    printf("#     # #   # ######         \n");
+    printf("#     #  # #  #              \n");
+    printf("######    #   #####          \n");
+    printf("#     #   #   #              \n");
+    printf("#     #   #   #              \n");
+    printf("######    #   ######         \n");
+    printf("\n");
+
+}
+
 void gradeBookChoice(void)
 {
     int choice = 0;
     float textAve, quizAve, homeworkAve, overAllAve;
     int exitProgram = 0;
+
     do
     {
         printf("Enter menu choice: ");
@@ -114,6 +141,7 @@ int main()
 {
     PrintMenu();
     gradeBookChoice();
+    Quit();
 
     return 0;
 }
