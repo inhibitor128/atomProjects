@@ -2,9 +2,6 @@ import re
 vso_lines = []
 mass_cities = []
 # find cities
-with open('newCities.txt') as city_file:
-    for line in city_file.readlines():
-        mass_cities.append(line.strip('\n'))
 p = re.compile(r'\s{15,}\w+\s{15,}\d{1,2}')
 with open('vso_a.txt') as vso_file:
     contents = vso_file.read()
@@ -49,4 +46,12 @@ for line in vso_emails:
         vso_emails_split.append(line[1])
     else:
         vso_emails_split.append(line[0])
-print(vso_emails_split)
+# VSO Dict
+vso_dict = {
+    'city': cities_clean,
+    'name': vso_names,
+    'phone number': vso_numbers,
+    'email': vso_emails_split
+    }
+
+print(vso_dict)
