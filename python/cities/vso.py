@@ -52,5 +52,7 @@ vso_dict = {
     'phone number': vso_numbers,
     'email': vso_emails_split
     }
-
-print(vso_dict)
+for key in vso_dict.keys():
+    print(key)
+    for i in vso_dict[key]:
+        print(i)
