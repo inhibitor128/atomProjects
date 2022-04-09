@@ -34,11 +34,19 @@ for line in m2:
     vso_numbers.append(re.sub(p4, '', line).strip())
 # print(vso_numbers)
 # vso email address
-vso_email = []
-p5 = re.compile(
-    r'FAX:.+(@\w+\.\w+\.\w{2}\.\w{2}|@\w+.\w{2}\.\w{2,3}|@\w+\.\w{2,3})')
+vso_emails = []
+p5 = re.compile(r'FAX:.+')
 with open('vso_a.txt') as vso_file:
     vso_read = vso_file.read()
     m3 = p5.findall(vso_read)
-print(len(m3))
-print(m3)
+p5_a = re.compile(r'\S+@\S+')
+for line in m3:
+    vso_emails.append(p5_a.findall(line))
+vso_emails_split = []
+for line in vso_emails:
+    if len(line) > 1:
+        vso_emails_split.append(line[0])
+        vso_emails_split.append(line[1])
+    else:
+        vso_emails_split.append(line[0])
+print(vso_emails_split)
