@@ -1,3 +1,4 @@
+# Using RE to make a dict of Massachussets VSOs name email and phone numbers
 import re
 vso_lines = []
 # find cities
