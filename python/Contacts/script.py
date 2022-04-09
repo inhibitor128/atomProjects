@@ -12,8 +12,8 @@ def secection_menu():
         elif tmp_ == 'd':
             return 'Exit'
 def contact_menu():
+    choice = input('[a] New Contact\n[b] Update Contact\n[c] Delete Contact\n[d] Exit\n>')
     while True:
-        choice = input('[a] New Contact\n[b] Update Contact\n[c] Delete Contact\n[d] Exit\n>')
         if choice in ['a','b','c','d']:
             return choice
         else:
@@ -44,20 +44,17 @@ def new_contact():
     }
     return contact_fields
 def update_contact():
+    ids = [contact['user id'] for contact in contacts]
+    scr = 0
+    for contact in contacts:
+        print('id: {} user: {} {}'.format(contact['user id'], contact['first name'], contact['last name']))
     while True:
-        ids = [contact['user id'] for contact in contacts]
-        print(ids)
-        for contact in contacts:
-            print('id: {} user: {} {}'.format(contact['user id'], contact['first name'], contact['last name']))
-        scr = input('Enter user id to edit or type exit to exit\n>')
-        if int(scr) in ids:
-            for i in contacts[int(scr)]:
-                print(i)
-                break
-        elif scr == 'exit':
-            return scr
+        scr = int(input('Enter user id to edit or type exit to exit\n>'))
+        if scr in ids:
+            return contacts[scr]
+            print(contacts[scr])
 #--------------------------------------------------
 secection_menu()
 
 
-print(contacts)
+# print(contacts)
