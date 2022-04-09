@@ -1,6 +1,5 @@
 import re
 vso_lines = []
-mass_cities = []
 # find cities
 p = re.compile(r'\s{15,}\w+\s{15,}\d{1,2}')
 with open('vso_a.txt') as vso_file:
