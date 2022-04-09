@@ -26,12 +26,13 @@ p3 = re.compile(r'\w+\.*\s\w+\s+\(\d{3}\) \d{3}-\d{4}')
 with open('vso_a.txt') as vso_file:
     vso_read = vso_file.read()
     m2 = p3.findall(vso_read)
+print(m2)
 p3_a = re.compile(r'\w+.*\s\w+\S+')
 vso_names = []
-for line in m2:
-    vso_names.append(p3_a.findall(line))
-for n in vso_names:
-    print(n)
+# for line in m2:
+#     vso_names.append(p3_a.findall(line))
+# for n in vso_names:
+#     print(n)
 
 
 
