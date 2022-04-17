@@ -542,7 +542,7 @@ treasurer@colrain-ma.gov                                 treasurer@goshen-ma.gov
                        Concord                     67    Susan Warriner                            413 665-2595
                                                          whatelytreasurer@comcast.net
 Richard Krug                          (978) 318-3038
-                                                                             Chelsea S.H.                 352
+                                                                             Chelsea                      352
 Town House PO Box 535
                                                          Francisco Toro                        (617) 466-4250
 Concord, MA 01742
@@ -634,8 +634,8 @@ Scott Dutra                                              -   FAX: 978 957-6442  
 capevso1@comcast.net                                                                 Accounting
                        Accounting                            Ann Vandal                                  978 454-2223
 MaryAnne Gibbs                                508 760-6152   financedirector@dracut-ma.us
-mgibbs@town.dennis.ma.us                                                                                          80
-                                                                                     Dudley
+mgibbs@town.dennis.ma.us
+                                                                                     Dudley                       80
                        Dighton                        76
                                                              Stephen Rogerson                        (508) 949-8010
 Donald Hirschy                           (508) 669-4524
@@ -645,8 +645,8 @@ Dighton, MA 02715                                            FAX:             - 
 FAX: 508 669-5667               dhirschy@dighton-ma.gov                              Accounting
                           VSO Staff                          Richard Carmignani                          508 949-8002
 Nancy Pinto                                   774 872-0944   richc@dudleyma.gov
-npinto@townofdighton.com                                                                                          81
-                                                                                    Dunstable
+npinto@townofdighton.com
+                                                                                    Dunstable                     81
                        Accounting
                                                              Joseph Dean                             (978) 649-3919
 Jennifer Luiz                                 508 669-6011
@@ -785,8 +785,8 @@ rfrank@fallriverma.org                                         bfitzgerald@fitch
 Joan Weglowski                                             -                           Accounting
 jweglowski@fallriverma.org                                     Anne Cervantes                              978 422-8111
 Karen Viveiros                              508 324-2438       acervantes@sterling-ma.gov
-kviveiros@fallriverma.org                                                                                          98
-                                                                                       Florida
+kviveiros@fallriverma.org
+                                                                                       Florida                     98
 Maria Desmarais                                            -
 cdesmarais@fallriverma.org                                     Stephen Roy                            (413) 662-3040
 
@@ -2882,4 +2882,3 @@ wendy.saunders@town.barnstable.ma
                        Accounting
 Susan Ripley                               508 495-7365
 sripley@falmouthmass.us
-
