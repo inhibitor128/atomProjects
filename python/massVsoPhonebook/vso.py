@@ -3,7 +3,7 @@ import re
 vso_lines = []
 # find cities
 p = re.compile(r'\s{15,}\w+\s{15,}\d{1,2}')
-with open('vso.txt') as vso_file:
+with open('vso_a_f.txt') as vso_file:
     contents = vso_file.read()
 m = p.findall(contents)
 m_clean = []

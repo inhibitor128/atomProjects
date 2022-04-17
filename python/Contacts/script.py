@@ -1,60 +1,33 @@
-contacts = []
-def secection_menu():
-    tmp_ = contact_menu()
+def enter_contact():
+    first_name = input('First name: ')
+    last_name = input('Last name: ')
+    phone_numer = input('Phone number: ')
+    email_address = input('Email address: ')
+    contact_dict = {
+        'first name': first_name,
+        'last name': last_name,
+        'phone number': phone_numer,
+        'email address': email_address
+        }
+    return contact_dict
+def menu_contact():
+    print('[a] - new contact')
+    print('[b] - view contacts')
+    print('[c] - update contacts')
+    print('[d] - delete contacts')
+    print('[e] - exit')
+def menu_selection():
+    temp_list = ['a','b','c','d','e']
     while True:
-        if tmp_ == 'a':
-            contacts.append(new_contact())
-            return secection_menu()
-        elif tmp_ == 'b':
-             return update_contact()
-        elif tmp_ == 'c':
-            return 'c'
-        elif tmp_ == 'd':
-            return 'Exit'
-def contact_menu():
-    choice = input('[a] New Contact\n[b] Update Contact\n[c] Delete Contact\n[d] Exit\n>')
-    while True:
-        if choice in ['a','b','c','d']:
-            return choice
+        menu_contact()
+        scr = input()
+        if scr in temp_list:
+            return scr
         else:
-            print('Make a valid selection')
-def new_contact():
-    contact_fields = {}
-    first_name = input('Enter first name:\n>')
-    last_name = input('Enter last name:\n>')
-    cell_phone = input('Enter cell phone:\n>')
-    email = input('Enter email:\n>')
-    address = input('Enter address:\n>')
-    city = input('Enter city:\n>')
-    state = input('Enter state\n>')
-    zip_code = input('Enter zip code:\n>')
-    notes = input('Enter notes:\n>')
-    user_id = len(contacts)
-    contact_fields = {
-    'user id': user_id,
-    'first name': first_name,
-    'last name': last_name,
-    'cell phone': cell_phone,
-    'email': email,
-    'address': address,
-    'city': city,
-    'state': state,
-    'zip code': zip_code,
-    'notes': notes
-    }
-    return contact_fields
-def update_contact():
-    ids = [contact['user id'] for contact in contacts]
-    scr = 0
-    for contact in contacts:
-        print('id: {} user: {} {}'.format(contact['user id'], contact['first name'], contact['last name']))
-    while True:
-        scr = int(input('Enter user id to edit or type exit to exit\n>'))
-        if scr in ids:
-            return contacts[scr]
-            print(contacts[scr])
-#--------------------------------------------------
-secection_menu()
+            print('enter a valid choice')
+            continue
 
-
-# print(contacts)
+selection = menu_selection()
+if selection == 'a':
+    enter_contact()
+    menu_selection()
