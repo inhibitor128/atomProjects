@@ -337,8 +337,8 @@ Ware, MA 01083                                            cleon@brooklinema.gov
 FAX: 413 283-2604                    Avis14@comcast.net                           Accounting
                         Accounting                        Jeana Franconi                            617 730-0202
 Andrea Beaudry                             413 245-4100   jfranconi@brooklinema.gov
-brimtreasurer@aol.com                                                                                        47
-                                                                                 Buckland
+brimtreasurer@aol.com
+                                                                                 Buckland                    47
                       Brockton                      44
                                                           Timothy Niejadlik                     (413) 775-1571
 David Farrell                          (508) 580-7850
@@ -542,7 +542,7 @@ treasurer@colrain-ma.gov                                 treasurer@goshen-ma.gov
                        Concord                     67    Susan Warriner                            413 665-2595
                                                          whatelytreasurer@comcast.net
 Richard Krug                          (978) 318-3038
-                                                                             Chelsea S.H.                 352
+                                                                             Chelsea HS                    35
 Town House PO Box 535
                                                          Francisco Toro                        (617) 466-4250
 Concord, MA 01742
@@ -634,8 +634,8 @@ Scott Dutra                                              -   FAX: 978 957-6442  
 capevso1@comcast.net                                                                 Accounting
                        Accounting                            Ann Vandal                                  978 454-2223
 MaryAnne Gibbs                                508 760-6152   financedirector@dracut-ma.us
-mgibbs@town.dennis.ma.us                                                                                          80
-                                                                                     Dudley
+mgibbs@town.dennis.ma.us
+                                                                                     Dudley                       80
                        Dighton                        76
                                                              Stephen Rogerson                        (508) 949-8010
 Donald Hirschy                           (508) 669-4524
@@ -645,8 +645,8 @@ Dighton, MA 02715                                            FAX:             - 
 FAX: 508 669-5667               dhirschy@dighton-ma.gov                              Accounting
                           VSO Staff                          Richard Carmignani                          508 949-8002
 Nancy Pinto                                   774 872-0944   richc@dudleyma.gov
-npinto@townofdighton.com                                                                                          81
-                                                                                    Dunstable
+npinto@townofdighton.com
+                                                                                    Dunstable                     81
                        Accounting
                                                              Joseph Dean                             (978) 649-3919
 Jennifer Luiz                                 508 669-6011
@@ -838,4 +838,3 @@ FAX: 508 520-4917                     dkurtz@franklinma.gov
                        Accounting
 Linda Darling                                  508 553-4864
 ldarling@franklinma.gov
-

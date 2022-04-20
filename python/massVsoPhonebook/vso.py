@@ -2,7 +2,7 @@
 import re
 vso_lines = []
 # find cities
-p = re.compile(r'\s{15,}\w+\s{15,}\d{1,2}')
+p = re.compile(r'(\s{15,}\w+\s{15,}\d{1,2}|\s{15,}\w+\s\w+\s{15,}\d{1,2})')
 with open('vso_a_f.txt') as vso_file:
     contents = vso_file.read()
 m = p.findall(contents)
@@ -53,7 +53,13 @@ vso_dict = {
     'phone number': vso_numbers,
     # 'email': vso_emails_split
     }
-print(vso_dict['city'])
+city_list = []
+for city in vso_dict['city']:
+    city_list.append(city)
+
+city_list.sort()
+for i in city_list:
+    print(i,str(city_list.index(i) + 1))
 # for key in vso_dict.keys():
 #     print(key)
 #     for i in vso_dict[key]:
